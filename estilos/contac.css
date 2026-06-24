@@ -1,0 +1,103 @@
+.formulario {
+    width: 100%;
+    max-width: 520px;
+    margin: 30px auto;
+    padding: 24px;
+    box-shadow: 0 0 20px rgba(85, 94, 179, 0.3);
+    border-radius: 14px;
+    background: #fff;
+}
+
+.formulariotitulo {
+    text-align: center;
+    margin: 0 0 32px;
+    color: rgba(37, 31, 97, 0.79);
+}
+
+.formularioinput,
+.formulariolabel,
+.formulariosubmit {
+    display: block;
+    width: 100%;
+}
+
+.formularioinput {
+    padding: 16px;
+    background-color: rgba(56, 66, 153, 0.05);
+    border: 1px solid rgba(95, 104, 241, 0.692);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.formulariolabel {
+    margin-bottom: 8px;
+    color: rgba(24, 25, 27, 0.925);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.formulariolabel.fijar {
+    margin-bottom: 0;
+    font-size: 0.75rem;
+    color: rgba(84, 58, 199, 0.79);
+    transform: translateY(-25px);
+}
+
+.formulariosubmit {
+    background: #367ac7d3;
+    color: #fff;
+    padding: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.formulariosubmit:hover {
+    transform: translateY(-2px);
+    background:#443cb4e1;
+}
+
+.formulario textarea.formularioinput {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.volver-inicio {
+    display: inline-block;
+    margin-top: 20px;
+    color: #5448bd;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.volver-inicio:hover {
+    text-decoration: underline;
+}
+
+/* Estado mostrado dentro del botón */
+.formulariosubmit {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.formulariosubmit .btn-status {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #23512a;
+}
+
+.formulariosubmit .btn-status.error {
+    color: #8f1d1d;
+}
+
+.formulariosubmit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}

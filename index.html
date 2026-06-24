@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--Metadatos-->
+    <meta charset="utf-8">
+    <meta name="author" content="Ezequiel Ramirez">
+    <meta name="description" content="Portafolio de mis datos personales">
+    <meta name="keywords" content="HTML,CSS,JavaScript,React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Titulo-->
+    <title>Ezequiel Ramirez | Desarollo Web front-End </title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Icono de bootstrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!--CSS-->
+    <link href="estilos/contac.css" rel="stylesheet">
+    <link href="estilos/style.css" rel="stylesheet">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+      <!--Barra de navegacion-->
+
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-Toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/icono.png" width="50" alt="logo de la pagina web">
+          </a>
+          <ul class="navbar-nav ms-auto d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#sobre-mi">sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#contactos">contactos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Seccion Hero -->
+
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-img" src="imagenes/foto-1.jpeg" alt="Foto de Ezequiel">
+        <h1>Hola, Soy Ezequiel</h1>
+        <h2>Soy desarrollador Web Front-End y comparto mi experiencia en artículos de programación.</h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-infe.jpg" alt="Monitor, laptop, logo HTML, CSS, JavaScript, React">
+      </div>
+    </section>
+
+    <!--sobre mi-->
+
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo"> Ezequiel Ramirez</h2>
+        <p class="seccion-texto">“Soy Ezequiel Ramírez, desarrollador web front-end. Trabajo con HTML, CSS y JavaScript, y también utilizo otras tecnologías como Python, SQL y bases de datos. Me gusta crear interfaces limpias y escribir artículos de programación mientras sigo aprendiendo nuevas herramientas.”</p>
+      </div>
+    </section>
+
+    <!--Experiencia-->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <h2 class="seccion-titulo">Desarrollo Web Front-End y Backend</h2>
+        <div class="row">
+          <!-- desarollo web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>Construyo sitios modernos con HTML, CSS, JavaScript y Bootstrap, enfocados en usabilidad y diseño responsivo.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">Bootstrap</span>
+            </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Artículos</p>
+            <p>Comparto mis experiencias de desarrollo web, buenas prácticas y soluciones concretas en programación.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Blogs</span>
+              <span class="badge text-bg-primary">Conceptos</span>
+              <span class="badge text-bg-primary">Comunicación</span>
+            </div>
+          </div>
+          <!-- Backend y datos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Backend y datos</p>
+            <p>Trabajo con Python, SQL y bases de datos para complementar aplicaciones con lógica y almacenamiento de datos.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Python</span>
+              <span class="badge text-bg-primary">SQL</span>
+              <span class="badge text-bg-primary">Bases de datos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+     
+    <!-- Proyectos-->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis Proyectos recientes</h2>
+      <h3 class="seccion-descripcion">Estos son algunos de mis proyectos recientes ... 
+      </h3>
+      <!-- Galeria de proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyectos">
+              <img src="imagenes/proyecto1.png" alt="Proyecto1">
+              <div class="overlay">
+                <p>Proyecto 1</p>
+                <div class="iconos-contenedor">
+                  <a href="https://ezequielrm.github.io/web-animal/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyectos">
+              <img src="imagenes/proyecto2.png" alt="Proyecto2">
+              <div class="overlay">
+                <p>Proyecto 2</p>
+                <div class="iconos-contenedor">
+                  <a href="https://ezequielrm.github.io/transporte-54/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyectos">
+              <img src="imagenes/proyecto3.png" alt="Proyecto3">
+              <div class="overlay">
+                <p>Proyecto 3</p>
+                <div class="iconos-contenedor">
+                  <a href="https://ezequielrm.github.io/Calculadora/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyectos">
+              <img src="imagenes/proyecto4.png" alt="Proyecto4">
+              <div class="overlay">
+                <p>Proyecto 4</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/EzequielRm?tab=repositories" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- contactos -->
+    <section id="contactos" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contactame para cualquier consulta o proyecto en el que pueda ayudarte. Estoy abierto a nuevas oportunidades y colaboraciones.
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center gap-2">
+              <a href="mailto:ezequielramirez36923603@gmail.com">
+                <button type="button">
+                  Email
+                  <i class="bi bi-envelope-arrow-up"></i>
+                </button>
+              </a>
+              <a href="contacto.html">
+                <button type="button">
+                  Formulario
+                  <i class="bi bi-pencil-square"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+      <img class="footer-logo" src="imagenes/icono-blanco.svg" width="50" alt="logo de portafolio">
+      <p class="footer-texto text-center">Aprendo y crecimiento continuo.<br>Creemos un proyectos juntos</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://www.linkedin.com/in/ezequiel-ramirez-3a5b8b1b9/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/EzequielRm" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="mailto:ezequielramirez36923603@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+        <a href="https://wa.me/5491135767337?text=Hola%20Ezequiel,%20vi%20tu%20portafolio%20de%20desarrollador%20web%20y%20me%20gustaria%20hablar%20sobre%20un%20proyecto." target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Ezequiel Ramirez(2026)&#169;</div>
+    </footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html> 
