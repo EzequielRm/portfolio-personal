@@ -2,7 +2,7 @@
 
 Este es un portafolio personal desarrollado con **HTML, CSS y JavaScript**, con secciones principales de presentación, experiencia, proyectos recientes y una página de **contacto** con formulario.
 
-## link: ttps://ezequielrm.github.io/portfolio-personal/
+## link: https://ezequielrm.github.io/portfolio-personal/
 
 ## 🧩 Demo / Acceso
 - Portafolio principal: **`index.html`**
