@@ -3,7 +3,7 @@
 Este proyecto es un portafolio personal desarrollado con **Python + Flask**, pensado para presentar mi perfil profesional, experiencia, proyectos y un formulario de contacto funcional. La aplicación combina HTML, CSS, JavaScript y una pequeña capa backend con almacenamiento en SQLite.
 
 ## 🌐 Demo en producción
-- URL de la app: `https://tu-app.onrender.com`
+- URL de la app: `https://portfolio-personal-4ewx.onrender.com`
 - Proyecto desplegado en **Render**
 
 ## 🚀 Descripción
