@@ -1,55 +1,83 @@
-# Portafolio Web (Ezequiel Ramírez)
+# Portafolio personal con Flask
 
-Este es un portafolio personal desarrollado con **HTML, CSS y JavaScript**, con secciones principales de presentación, experiencia, proyectos recientes y una página de **contacto** con formulario.
+Este proyecto es un portafolio personal desarrollado con **Python + Flask**, pensado para presentar mi perfil profesional, experiencia, proyectos y un formulario de contacto funcional. La aplicación combina HTML, CSS, JavaScript y una pequeña capa backend con almacenamiento en SQLite.
 
-## link: https://ezequielrm.github.io/portfolio-personal/
+## 🌐 Demo en producción
+- URL de la app: `https://tu-app.onrender.com`
+- Proyecto desplegado en **Render**
 
-## 🧩 Demo / Acceso
-- Portafolio principal: **`index.html`**
-- Formulario de contacto: **`contacto.html`**
+## 🚀 Descripción
+La aplicación renderiza la página principal del portafolio y ofrece una ruta dedicada al formulario de contacto. Los mensajes enviados se validan y se guardan en una base de datos local SQLite, lo que permite mantener un registro simple de consultas o mensajes del sitio.
 
-> Para verlo, basta con abrir los archivos en tu navegador.
-
-## ✨ Características
-- **Navegación** tipo navbar con enlaces a secciones del sitio.
-- **Sección Hero** con foto e introducción.
-- **Sobre mí** (descripción personal y tecnologías).
-- **Experiencia** con bloques y badges de tecnologías.
-- **Proyectos recientes** con galería e overlay al pasar el mouse.
-- **Contacto** con formulario que:
-  - valida campos (nombre, correo y mensaje)
-  - muestra estado en el botón
-  - envía el mensaje abriendo tu cliente de correo usando `mailto`
+## ✨ Funcionalidades
+- Navbar con enlaces internos a las secciones del sitio
+- Sección principal con presentación personal
+- Área “Sobre mí” con información profesional y tecnologías
+- Sección de experiencia y herramientas
+- Galería de proyectos recientes
+- Formulario de contacto con validación de campos obligatorios
+- Guardado de mensajes en SQLite
+- Estructura modular con templates y archivos estáticos
 
 ## 🛠️ Tecnologías utilizadas
+- **Python**
+- **Flask**
+- **SQLite**
 - **HTML5**
 - **CSS3**
-- **JavaScript (Vanilla)**
-- **Bootstrap 5** (CDN)
-- **Bootstrap Icons** (CDN)
+- **JavaScript**
+- **Bootstrap 5**
+- **Bootstrap Icons**
 - **Google Fonts**
 
 ## 📁 Estructura del proyecto
-- `index.html` → Portafolio principal
-- `contacto.html` → Página con el formulario
-- `contacto.js` → Lógica del envío y estados del formulario
-- `estilos/style.css` → Estilos generales
-- `estilos/contac.css` → Estilos específicos del formulario
-- `imagenes/` → Imágenes, íconos y capturas utilizadas 
+- `app.py` → Aplicación principal de Flask
+- `database.db` → Base de datos SQLite para contacto
+- `templates/index.html` → Página principal del portafolio
+- `templates/contacto.html` → Formulario de contacto
+- `static/contacto.js` → Lógica del formulario
+- `static/estilos/style.css` → Estilos generales
+- `static/estilos/contac.css` → Estilos del formulario
+- `static/estilos/imagenes/` → Recursos visuales del sitio
 
-## 📌 Cómo usar / ejecutar
-### Opción recomendada (sin instalación)
-1. Abrí `index.html` en tu navegador.
-2. Si querés enviar un mensaje, abrí `contacto.html` y completá el formulario.
+## ▶️ Cómo ejecutar el proyecto localmente
+### 1. Crear entorno virtual
+```bash
+python -m venv venv
+```
 
-### Envío de formulario
-El formulario utiliza `mailto`:
-- asunto: **“Contacto desde el formulario”**
-- cuerpo: incluye nombre, correo, teléfono (si se completa) y mensaje
+### 2. Activar entorno virtual
+Windows:
+```bash
+venv\Scripts\activate
+```
+
+### 3. Instalar dependencias
+```bash
+pip install flask flask-cors
+```
+
+### 4. Ejecutar la aplicación
+```bash
+python app.py
+```
+
+### 5. Abrir en el navegador
+```bash
+http://localhost:5000/
+```
+
+También podés acceder al formulario en:
+```bash
+http://localhost:5000/contacto
+```
+
+## 📬 Formulario de contacto
+El formulario valida los campos obligatorios (`nombre`, `email` y `mensaje`) y almacena la información en SQLite. Si faltan datos o el envío no es válido, la API responde con un mensaje de error JSON.
 
 ## 👨‍💻 Autor
 **Ezequiel Ramírez**
 
 ## 📌 Nota
-Este proyecto está pensado para demostración y uso local/publicación estática. Los links de proyectos y redes sociales fueron incorporados desde el propio HTML.
+Este proyecto está pensado para uso local y demostración. Cuando se despliega en producción, se recomienda configurar un servicio adecuado para la aplicación y mantener la base de datos en un entorno persistente.
 

@@ -34,13 +34,27 @@ document.addEventListener('DOMContentLoaded', function () {
       `Nombre: ${name}\nCorreo: ${email}\nTeléfono: ${phone}\n\nMensaje:\n${message}`
     );
 
-    // mostrar estado en el botón, deshabilitar y limpiar campos
-    if (btnText) btnText.textContent = 'Enviando...';
-    if (submitBtn) submitBtn.disabled = true;
-    form.reset();
+    fetch('http://127.0.0.1:5000/contacto', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, phone, message })
+    })
+    .then(res => res.json())
+    .then(data => {
+      if(btnStatus) {
+        btnStatus.textContent = '✅ ' + data.mensaje;
+        btnStatus.style.color = 'green';
+      }
+      form.reset();
+    })
+    .catch(err => {
+      if(btnStatus) {
+        btnStatus.textContent = '❌ Error al enviar';
+        btnStatus.style.color = 'red';
+      }
+    });
 
-    const mailtoLink = `mailto:ezequielramirez36923603@gmail.com?subject=${subject}&body=${body}`;
-    window.location.href = mailtoLink;
+
 
     // revertir estado después de un tiempo para permitir reenvío
     setTimeout(function () {
