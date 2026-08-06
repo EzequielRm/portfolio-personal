@@ -79,5 +79,5 @@ El formulario valida los campos obligatorios (`nombre`, `email` y `mensaje`) y a
 **Ezequiel Ramírez**
 
 ## 📌 Nota
-Este proyecto está pensado para uso local y demostración. Cuando se despliega en producción, se recomienda configurar un servicio adecuado para la aplicación y mantener la base de datos en un entorno persistente.
+Este proyecto fue desarrollado como una demostración funcional y de aprendizaje. En un entorno de producción, se recomienda desplegarlo en un servicio confiable y utilizar una base de datos persistente para garantizar estabilidad, disponibilidad y un mejor rendimiento.
 
