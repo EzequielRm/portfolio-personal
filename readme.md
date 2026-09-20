@@ -4,7 +4,7 @@ Este proyecto es un portafolio personal desarrollado con **Python + Flask**, pen
 
 ## 🌐 Demo en producción
 
-- 🚀 **URL de la app:** [**https://portfolio-personal-4ewx.onrender.com**](https://portfolio-personal-4eux.onrender.com)
+- 🚀 **URL de la app:** [**https://portfolio-personal-4ewx.onrender.com**](https://portfolio-personal-4ewx.onrender.com)
 - Proyecto desplegado en Render
 
 ## 🚀 Descripción
